@@ -36,12 +36,12 @@ try:
 
             if str(status) in status_codes.keys():
                 status_codes[str(status)] += 1
-        except ValueError:
+        except:
             pass
 
         try:
             file_size += int(pieces[-1])
-        except IndexError:
+        except:
             pass
 
         lc += 1
